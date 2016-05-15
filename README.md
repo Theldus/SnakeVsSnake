@@ -39,3 +39,5 @@ enemies even unintentionally.
 
 Even so, I believe the game is playable, so I don't plan to fix these bugs as early, if you believe it is impossible to play,
 or the game didn't even work, let me know.
+
+You can check this running on [http://snakevssnake-theldustest.rhcloud.com/](http://snakevssnake-theldustest.rhcloud.com/)

@@ -1,0 +1,72 @@
+<!-- 
+Snake vs Snake - An Snake multiplayer game.
+Copyright (C) 2016  Davidson Francis <davidsondfgl@gmail.com>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<html>
+    <head>
+    	<meta charset="utf-8">
+		<script src="js/jquery.js"></script>
+		<script src="js/noty/jquery.noty.packaged.min.js"></script>
+		<script src="js/noty/relax.js"></script>
+        <script src="js/snake.js"></script>
+        <script src="js/websocket.js"></script>
+        <script src="bootstrap-3.0.3/js/bootstrap.js"></script>
+        <script type="text/javascript">
+            window.addEventListener("load", init, false);
+        </script>
+		<link rel="stylesheet" href="bootstrap-3.0.3/css/bootstrap.css">
+		<link rel="stylesheet" href="css/theme.css">
+    </head>
+    
+    <body>
+    	<div class="container">
+    		<a href="https://github.com/Theldus/SnakeVsSnake" target="_blank"><img src="imgs/git3.png" align="right"></a> 
+    		<div class="row">
+    			<div class="col-xs-12">
+					<img class="snakes" src="imgs/snake2.png" title="logo by Well">
+					<center><b><font color="#40AB5C">*The first to arrive in size 30 wins!, good luck</font></b></center>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-4"></div>
+			
+				<div class="col-xs-2">
+					<input type="text" id="txtName" class="form-control" placeholder="Your name..">
+				</div>
+				
+				<div class="col-xs-2">
+					<button id="btnPlay" class="btn btn-info">Play</button>
+				</div>
+				
+				<div class="col-xs-4"></div>
+			</div>
+			
+			<div class="row row-centered">
+				<div class="col-xs-9">
+	        		<canvas id="world" width="598" height="299" style="border:1px solid #c3c3c3;" align="center"></canvas>
+	        	</div>
+	        	
+	        	<div class="col-xs-3">
+	        		<div class="contentDiv" id="rankingBox">
+	        			<div><h3 class="title">Ranking</h3></div>
+	        		</div>
+	        	</div>
+			</div>
+		</div>
+    </body>
+</html>
